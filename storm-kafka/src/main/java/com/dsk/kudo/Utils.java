@@ -48,7 +48,7 @@ public class Utils {
   public static void loadConfiguration() throws IOException {
     InputStream input = null;
     try {
-      String filename = "KuduImpalaJDBC.conf";
+      String filename = "/KuduImpalaJDBC.conf";
       input = Utils.class.getResourceAsStream(filename);
       Properties prop = new Properties();
       prop.load(input);
@@ -63,4 +63,9 @@ public class Utils {
       }
     }
   }
+
+  /*public static void main(String[] args) {
+      System.out.println(connectionUrl);
+      System.out.println(jdbcDriverName);
+  }*/
 }
